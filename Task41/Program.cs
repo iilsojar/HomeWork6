@@ -17,34 +17,15 @@ Console.WriteLine("Вывод массива:");
 
 for (int i = 0; i < Array.Length; i++)
 {
-    Console.Write(Array[i] );
+    Console.Write(Array[i]);
     Console.WriteLine();
 }
 
+int count = default;
+foreach (int elem in Array)
+{
+    if(elem > 0) count++;
+}
+Console.Write($"количество чётных чисел в массиве => {count}");
+Console.WriteLine();
 
-
-
-
-
-// int[] GetArray(int size, int a, int b, int c)
-// {
-    
-//     int[] res = new int[size];
-//     for (int i = 0; i < size; i++)
-//     {
-//         Console.Write($"{res[i]} ");
-//     }
-//     return res;
-//     Console.WriteLine();
-// }
-
-// int[] array = GetArray(3, a, b, c);
-
-// // int count = default;
-
-// // foreach (int elem in array)
-// // {
-// //     if(elem > 0) count++;
-// // }
-// // Console.Write($"количество чётных чисел в массиве => {count}");
-// // Console.WriteLine();
