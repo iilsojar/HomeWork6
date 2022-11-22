@@ -26,6 +26,6 @@ foreach (int elem in Array)
 {
     if(elem > 0) count++;
 }
-Console.Write($"количество чётных чисел в массиве => {count}");
+Console.Write($"количество чисел больше нуля в массиве => {count}");
 Console.WriteLine();
 
